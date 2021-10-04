@@ -57,7 +57,7 @@ export const style = `
   letter-spacing: 0.5px;
   margin: 0 5px 0 0;
 }
-.price_rating .rating i {
+.price_rating .rating svg {
   color: #ffb503;
   font-size: 15px;
 }
@@ -75,12 +75,15 @@ export const style = `
 .hover_right .icon_container {
   padding: 10px 10px;
 }
+.hover_right .icon_container a {
+  color: #222222;
+  font-size: 15px;
+}
 .hover_right .icon_container:hover {
   background-color: #222222;
-  color: #fff;
 }
-.hover_right .icon_container i {
-  font-size: 15px;
+.hover_right .icon_container:hover a {
+  color: #fff;
 }
 .hover_left {
   color: #fff;
@@ -186,5 +189,6 @@ export const style = `
     font-size: 13px;
   }
 }
+
 
 `;
