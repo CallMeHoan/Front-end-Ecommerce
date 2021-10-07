@@ -73,7 +73,7 @@ export const style = `
   cursor: pointer;
 }
 .hover_right .icon_container {
-  padding: 10px 10px;
+  padding: 5px 10px;
 }
 .hover_right .icon_container a {
   color: #222222;
@@ -89,7 +89,7 @@ export const style = `
   color: #fff;
   position: absolute;
   left: 0;
-  top: 75%;
+  top: 70%;
   z-index: -1;
   transition: 0.5s;
   font-size: 10px;
@@ -159,7 +159,7 @@ export const style = `
 }
 
 /* For screen with max width 1100px */
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 700px) {
   .product_card {
     width: 230px;
   }
@@ -180,10 +180,11 @@ export const style = `
     padding: 3px 0;
   }
   .hover_right .icon_container {
-    padding: 5px 5px;
+    margin-top: 5px
+    padding: 0px 5px;
   }
   .hover_left {
-    margin-top: -20px;
+    margin-top: -30px;
   }
   .hover_left h2 {
     font-size: 13px;
