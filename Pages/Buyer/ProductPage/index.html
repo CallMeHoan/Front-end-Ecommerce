@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../../../Components/Buyer/CategorySlideBar/CategorySlideBar.css">
+    <link rel="stylesheet" href="../../../Components/Buyer/Footer/Footer.css">
 </head>
 
 <body>
@@ -40,8 +41,8 @@
                 </div>
                 <div class="show_item">
                     <h5>Show:</h5>
-                    <div class="show_item_select">
-                        <select>
+                    <div class="show_item_select" onchange="getProductItem()">
+                        <select id="show_value">
                             <option value="1">12</option>
                             <option value="2">24</option>
                             <option value="3">36</option>
@@ -50,13 +51,10 @@
                     </div>
                 </div>
             </div>
-            <product-card class="item"></product-card>
-            <product-card class="item"></product-card>
-            <product-card class="item"></product-card>
-            <product-card class="item"></product-card>
-            <product-card class="item"></product-card>
+            <div class="product_container"></div>
         </div>
     </div>
+    <div id="footer"></div>
 </body>
 <script type="module" src="../../../Components/Buyer/ProductCard/ProductCard.js"></script>
 <script src="https://kit.fontawesome.com/e82e1ec9a6.js" crossorigin="anonymous"></script>
@@ -69,6 +67,7 @@
     crossorigin="anonymous"></script>
 <script src="../../../Components/Buyer/CategorySlideBar/CategorySlideBar.js"></script>
 <script src="../../../Components/Buyer/CategorySlideBar/CategorySlideBarMain.js"></script>
+<script src="../../../Components/Buyer/Footer/Footer.js"></script>
 <script src="main.js"></script>
 
 </html>
