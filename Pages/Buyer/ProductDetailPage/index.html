@@ -8,9 +8,16 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <title>Product detail</details>
+    <title>Product detail</title>
     </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../..//Components/Buyer/ProductCard/ProductCardCarousel.css">
+    <link rel="stylesheet" href="../../../Components/Buyer/Footer/Footer.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -18,30 +25,19 @@
     <section class="owl">
         <div class="wrapper">
             <div class="carousel owl-carousel">
-                <div class="box">
-                    <product-card></product-card>
-                </div>
-                <div class="box">
-                    <product-card></product-card>
-                </div>
-                <div class="box">
-                    <product-card></product-card>
-                </div>
-                <div class="box">
-                    <product-card></product-card>
-                </div>
-                <div class="box">
-                    <product-card></product-card>
-                </div>
-                <div class="box">
-                    <product-card></product-card>
-                </div>
+                <product-card></product-card>
+                <product-card></product-card>
+                <product-card></product-card>
+                <product-card></product-card>
+                <product-card></product-card>
             </div>
         </div>
     </section>
+    <div id="footer"></div>
 </body>
 <script type="module" src="../../../Components/Buyer/ProductCard/ProductCard.js"></script>
 <script src="../../../Components/Buyer/ProductCard/ProductCardCarouselMain.js"></script>
+<script src="../../../Components/Buyer/Footer/Footer.js"></script>
 <script src="main.js"></script>
 
 </html>
