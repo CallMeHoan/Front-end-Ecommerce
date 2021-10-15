@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.footer {
+  width: 100vw;
+  height: 480px;
+  background-color: #222222;
+  font-family: Jost;
+  padding-top: 70px;
+}
+.col-sm {
+  color: white;
+}
+.col-sm.item1 {
+  border-right: 0.5px solid #777777;
+  height: 250px;
+}
+.col__item {
+  margin-left: 15px;
+}
+.col__item h5 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: -2px 0 21px;
+  margin-bottom: 20px;
+}
+.col__item p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #777777;
+}
+.col__item span {
+  font-size: 14px;
+  padding: 0 5px 0 0;
+  color: #ffffff;
+}
+.col__item a {
+  outline: none;
+  text-decoration: none;
+  display: table-column-group;
+  color: #777777;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+.col__item a:hover {
+  color: #ffffff;
+}
+.footer__icons {
+  height: 100px;
+  width: 100vw;
+  border-top: 1px solid #777777;
+  border-bottom: 1px solid #777777;
+}
+.icons_container {
+  margin: 0 60px;
+  padding: 25px 0;
+}
+.icons_container .icons a {
+  margin-right: 40px;
+  text-decoration: none;
+  color: #777777;
+  font-size: 30px;
+  cursor: pointer;
+}
+.icons_container .icons a:hover {
+  color: #ffffff;
+}
+.footer__copyright {
+  margin-top: 8px;
+  padding: 10px 0;
+}
+.footer__copyright p {
+  color: #777777;
+}
