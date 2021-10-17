@@ -1,15 +1,8 @@
-(function($) {
-
-    "use strict";
-
-    var fullHeight = function() {
-
-        $('.js-fullheight').css('height', $(window).height());
-        $(window).resize(function(){
-            $('.js-fullheight').css('height', $(window).height());
-        });
-
-    };
-    fullHeight();
-
-})(jQuery);
+var counter = 1;
+setInterval(function(){
+    document.getElementById('radio'+counter).checked = true;
+    counter++;
+    if (counter>4){
+        counter=1;
+    }
+},6000);
