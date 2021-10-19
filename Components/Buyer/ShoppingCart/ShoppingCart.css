@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.shopping__cart__image {
+  display: flex;
+  justify-content: center;
+}
+.shopping__cart__image img {
+  height: 80px;
+  width: 80px;
+}
+tbody td {
+  text-align: center;
+  justify-content: center;
+}
+.shopping__cart__component {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.shopping__cart__component input {
+  width: 60px;
+  height: 40px;
+  padding: 6px 15px;
+  cursor: pointer;
+}
+.shopping__cart__component a {
+  color: #777777;
+  text-decoration: none;
+}
+.shopping__cart__component a:hover {
+  color: #222222;
+}
+.shopping__cart__component button {
+  width: 80px;
+  height: 40px;
+  padding: 6px 15px;
+  border: none;
+}
+.shopping__cart__component .update__quantity {
+  color: white;
+  background-color: #222222;
+  cursor: pointer;
+}
+.shopping__cart__component .update__quantity:hover {
+  background-color: white;
+  border: 2px solid #222222;
+  color: #222222;
+}
+.shopping__cart__component .delete__product {
+  background-color: #d9534f;
+  color: white;
+}
+.shopping__cart__component .delete__product:hover {
+  background-color: #db251f;
+}
+.thead-dark tr th {
+  text-align: center;
+}
