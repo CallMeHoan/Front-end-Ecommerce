@@ -4,3 +4,22 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: Jost;
+  overflow-x: hidden;
+}
+.contact__us__container h1 {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: -50px;
+}
+.contact__us__container .container {
+  display: grid;
+}
+.contact__us__container .card .card-link {
+  color: #777777;
+}
+.contact__us__container .card .card-link:hover {
+  color: #222222;
+}
