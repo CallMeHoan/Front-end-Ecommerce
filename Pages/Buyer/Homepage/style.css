@@ -7,6 +7,7 @@
 html {
   font-family: Jost sans-serif;
   overflow-x: hidden;
+  width: 100vw;
 }
 
 .showcase {
