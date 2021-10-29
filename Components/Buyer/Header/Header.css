@@ -32,60 +32,30 @@ body {
   padding: 15px 17px;
   position: relative;
 }
-.header__middle ul li:nth-child(1)::after {
+.header__middle ul li::after {
   content: "";
   position: absolute;
-  width: 60%;
   height: 0.1rem;
   background-color: #222222;
   left: 15px;
   bottom: 15px;
   transform: scale(0, 1);
   transition: transform 0.3s ease;
+}
+.header__middle ul li:nth-child(1)::after {
+  width: 60%;
 }
 .header__middle ul li:nth-child(2)::after {
-  content: "";
-  position: absolute;
   width: 76%;
-  height: 0.1rem;
-  background-color: #222222;
-  left: 15px;
-  bottom: 15px;
-  transform: scale(0, 1);
-  transition: transform 0.3s ease;
 }
 .header__middle ul li:nth-child(3)::after {
-  content: "";
-  position: absolute;
   width: 81%;
-  height: 0.1rem;
-  background-color: #222222;
-  left: 15px;
-  bottom: 15px;
-  transform: scale(0, 1);
-  transition: transform 0.3s ease;
 }
 .header__middle ul li:nth-child(4)::after {
-  content: "";
-  position: absolute;
   width: 75%;
-  height: 0.1rem;
-  background-color: #222222;
-  left: 15px;
-  bottom: 15px;
-  transform: scale(0, 1);
-  transition: transform 0.3s ease;
 }
 .header__middle ul li:nth-child(5)::after {
-  content: "";
-  position: absolute;
   width: 70%;
-  height: 0.1rem;
-  background-color: #222222;
-  left: 15px;
-  bottom: 15px;
-  transform: scale(0, 1);
-  transition: transform 0.3s ease;
 }
 .header__middle ul li:hover::after {
   transform: scale(1, 1);
