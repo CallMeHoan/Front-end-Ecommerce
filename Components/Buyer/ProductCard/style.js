@@ -121,6 +121,7 @@ export const style = `
 }
 .tooltips {
   position: relative;
+  z-index: 1000;
 }
 .tooltips::after,
 .tooltips::before {
