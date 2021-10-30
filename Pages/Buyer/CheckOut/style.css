@@ -11,3 +11,70 @@ html {
 .accordion {
   padding: 30px 100px;
 }
+.accordion h3 {
+  margin: 0 0 15px;
+  font-size: 16px;
+  color: #222222;
+  font-weight: 600;
+}
+.accordion .accordion-item {
+  margin-bottom: 15px;
+}
+.accordion .accordion-item button {
+  border: 1px solid #222222;
+  height: 40px;
+  align-items: center;
+  font-weight: 600;
+  background-color: #f7f7f7;
+}
+.accordion .accordion-item .accordion-collapse {
+  border: 1px solid #222222;
+}
+.accordion .accordion-item .collapseOne .accordion-body {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1 {
+  margin: 20px 0 10px;
+  font-size: 28px;
+  color: #222222;
+  font-weight: 600;
+}
+p {
+  margin: 0 0 10px;
+  font-size: 14px;
+  color: #222222;
+}
+.register__btn,
+.login__btn {
+  padding: 8px 30px;
+  background-color: #222222;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #222222;
+}
+.register__btn:hover,
+.login__btn:hover {
+  background-color: white;
+  color: #222222;
+}
+legend {
+  border-bottom: 1px solid #d3cfcf;
+  font-size: 18px;
+  margin: 0 0 20px;
+  padding: 7px 0;
+  color: #333333;
+}
+label {
+  font-size: 14px;
+  margin: 0 0 5px;
+  color: #222222;
+}
+input {
+  height: 40px;
+}
+span {
+  color: red;
+}

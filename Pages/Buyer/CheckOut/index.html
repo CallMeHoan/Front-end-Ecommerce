@@ -2,104 +2,271 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <title>Product detail</title>
-    </title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../../../Components/Buyer/Footer/Footer.css">
-    <link rel="stylesheet" href="../../../Components/Buyer/Header/Header.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <title>Product detail</title>
+  </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../../../Components/Buyer/Header/Header.css">
+  <link rel="stylesheet" href="../../../Components/Buyer/Footer/Footer.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="header"></div>
-    <div class="accordion" id="accordionItems">
-      <h2>CHECKOUT</h2>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              STEP 1: CHECKOUT OPTION
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionItems">
-            <div class="accordion-body">
-              
+  <div id="header"></div>
+  <div class="accordion" id="accordionItems">
+    <h3>CHECKOUT</h3>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+          aria-expanded="true" aria-controls="collapseOne">
+          CHECKOUT OPTION
+        </button>
+      </h2>
+      <div id="collapseOne" collapseOneclass="accordion-collapse collapse show" aria-labelledby="headingOne"
+        data-bs-parent="#accordionItems">
+        <div class="accordion-body container">
+          <div class="option__container row">
+            <div class="option__1 col">
+              <h1>New Customer</h1>
+              <p>Please sign up to continue shopping!</p>
+              <br>
+              <a class="register__btn" href="../MyAccount/Register/index.html">Register</a>
             </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              STEP 2: ACCOUNT & BILLING DETAILS
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionItems">
-            <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              STEP 3: DELIVERY DETAILS
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionItems">
-            <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFour">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                STEP 4: DELIVERY METHOD
-              </button>
-            </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionItems">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            <div class="option__2 col">
+              <h1>Returning Customer</h1>
+              <p>I am a returning customer</p>
+              <div class="mb-3">
+                <label class="form-label"><span>*</span>Username</label>
+                <input type="text" class="form-control" placeholder="Enter your Username here!" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label"><span>*</span>Password</label>
+                <input type="password" class="form-control" placeholder="Enter your password here!" required>
+              </div>
+              <div class="mb-3">
+                <a type="button" class="login__btn">Login</a>
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFive">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
-                STEP 5: PAYMENT METHOD
-              </button>
-            </h2>
-            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionItems">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingSix">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
-                STEP 6: CONFIRM ORDER
-              </button>
-            </h2>
-            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionItems">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
+        </div>
       </div>
-    <div id="footer"></div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+          aria-expanded="false" aria-controls="collapseTwo">
+          ACCOUNT & BILLING DETAILS
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+        data-bs-parent="#accordionItems">
+        <div class="accordion-body">
+          <div class="accordion-body container">
+            <div class="option__container row">
+              <div class="option__1 col">
+                <legend>Your Personal Details</legend>
+                <div class="mb-3">
+                  <label class="form-label"><span>*</span>First Name</label>
+                  <input type="text" class="form-control" placeholder="Enter your First Name here!" required>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label"><span>*</span>Last Name</label>
+                  <input type="text" class="form-control" placeholder="Enter your Last Name here!" required>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label"><span>*</span>Telephone</label>
+                  <input type="number" class="form-control" placeholder="Enter your Telephone here!" required>
+                </div>
+                <legend>Your Account Details</legend>
+                <div class="mb-3">
+                  <label class="form-label"><span>*</span>Username</label>
+                  <input type="text" class="form-control" placeholder="Enter your Username here!" required>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label"><span>*</span>Password</label>
+                  <input type="password" class="form-control" placeholder="Enter your password here!" required>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label"><span>*</span>Password Confirm</label>
+                  <input type="password" class="form-control" placeholder="Confirm your Pasword here!" required>
+                </div>
+              </div>
+              <div class="option__2 col">
+                <legend>Your Address</legend>
+                <div class="mb-3">
+                  <label class="form-label"><span>*</span>Address</label>
+                  <input type="text" class="form-control" placeholder="Enter your Address here!" required>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label"><span>*</span>Road</label>
+                  <input type="text" class="form-control" placeholder="Enter your Road Name here!" required>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label"><span>*</span>Ward</label>
+                  <input type="text" class="form-control" placeholder="Enter your Ward here!" required>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label"><span>*</span>District</label>
+                  <input type="text" class="form-control" placeholder="Enter your District here!" required>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label"><span>*</span>City</label>
+                  <input type="text" class="form-control" placeholder="Enter your City here!" required>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label"><span>*</span>Country</label>
+                  <input type="text" class="form-control" placeholder="Enter your Country here!" required>
+                </div>
+                <div class="mb-3">
+                  <a style="float: right; margin-top: 15px;" type="button" class="login__btn">CONTINUE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+          PAYMENT METHOD
+        </button>
+      </h2>
+      <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+        data-bs-parent="#accordionItems">
+        <div class="accordion-body">
+          <p>Please select the preferred payment method to use on this order.</p>
+          <div class="form-check">
+            <input class="form-check-input" type="radio">
+            <label class="form-check-label">
+              COD - Cash On Delivery
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio">
+            <label class="form-check-label">
+              Using PayPal
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio">
+            <label class="form-check-label">
+              Using VN-PAY
+            </label>
+          </div>
+          <div class="form-check mb-3">
+            <a style="float: right;" type="button" class="login__btn">CONTINUE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingSix">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+          aria-expanded="false" aria-controls="collapseThree">
+          CONFIRM ORDER
+        </button>
+      </h2>
+      <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+        data-bs-parent="#accordionItems">
+        <div class="accordion-body">
+          <table class="table table-bordered">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Product Name</th>
+                <th scope="col">Model</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Unit Price</th>
+                <th scope="col">Total Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="shopping__cart__component">
+                    <p>Cái gì đấy</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="shopping__cart__component">
+                    <p>UTE</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="shopping__cart__component">
+                    <p>1</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="shopping__cart__component">
+                    <p>$Vô giá</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="shopping__cart__component">
+                    <p>$Uncountable</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  <div class="shopping__cart__component">
+                    <p style="float: right;">Shipping fee</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="shopping__cart__component">
+                    <p>Bao nhiêu tiền đấy</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  <div class="shopping__cart__component">
+                    <p style="float: right;">Sub-Total</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="shopping__cart__component">
+                    <p>Bao nhiêu tiền đấy</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  <div class="shopping__cart__component">
+                    <p style="float: right;">Total</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="shopping__cart__component">
+                    <p style="color: red;">Tổng tiền nè lo thanh toán đi</p>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="form-check mb-3">
+            <a style="float: right;" type="button" class="login__btn">PAY!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer"></div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script type="module" src="../../../Components/Buyer/ProductCard/ProductCard.js"></script>
 <script type="module" src="../../../Components/Buyer/ProductDetail/ProductDetail.js"></script>
 <script src="../../../Components/Buyer/ProductCard/ProductCardCarouselMain.js"></script>
