@@ -8,7 +8,7 @@ $(document).ready(function() {
             <ul>
                 <li><a href="#">Home</a></li>
                 <li>
-                    <a>Men's shoes</a>
+                    <a href="../ProductPage/index.html">Men's shoes</a>
                     <div class="dropdown__items">
                         <ul>
                             <li><a href="#">Casual</a></li>
@@ -22,7 +22,7 @@ $(document).ready(function() {
                     </div>
                 </li>
                 <li>
-                    <a href="#">Women's Shoes</a>
+                    <a href="../ProductPage/index.html">Women's Shoes</a>
                     <div class="dropdown__items">
                         <ul>
                             <li><a href="#">Casual</a></li>
@@ -36,7 +36,7 @@ $(document).ready(function() {
                     </div>
                 </li>
                 <li>
-                    <a href="#">Accessories</a>
+                    <a href="../ProductPage/index.html">Accessories</a>
                     <div class="dropdown__items">
                         <ul>
                             <li><a href="#">Casual</a></li>
@@ -50,7 +50,7 @@ $(document).ready(function() {
                     </div>
                 </li>
                 <li>
-                    <a href="#">Clothers</a>
+                    <a href="../ProductPage/index.html">Clothers</a>
                     <div class="dropdown__items">
                         <ul>
                             <li><a href="#">Casual</a></li>

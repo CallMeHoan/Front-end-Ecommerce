@@ -30,7 +30,7 @@ template.innerHTML = `
             <h2 title='Add to cart'>Add to cart</h2>
         </div>
         <div class='product_infomation'>
-            <a href="#">Arnold & Son</a>
+            <a href="../ProductDetailPage/index.html">Arnold & Son</a>
             <div class='price_rating'>
                 <div class='price'><h3>$86.00</h3></div>
                 <div class='rating'>
