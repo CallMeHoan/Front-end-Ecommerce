@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class ="register_container">
+    <h1>REGISTER ACCOUNT</h1>
+    <P>If you already have an account with us, please login at the login page.</P>
+    <div class="personal_details">
+        <legend>Your Personal Details</legend>
+        <form>
+            <label>First Name</label>   
+            <input type="text" class="input_items" placeholder="First Name"><br> <br>
+            <label>Last Name</label>    
+            <input type="text" class="input_items" placeholder="Last Name"><br> <br>
+            <label>E-Mail</label>       
+            <input type="text" class="input_items" placeholder="E-Mail"><br>    <br>
+            <label>Telephone</label>    
+            <input type="text" class="input_items" placeholder="Telephone"><br><br>
+        </form>
+    </div>
+
+    <div class="user_password">
+        <legend>Your Password</legend><br>
+        <form>
+            <label>Password</label> 
+            <input type="password" class="input_items" placeholder="Password"> <br><br>
+            <label>Password Confirm</label> 
+            <input type="password" class="input_items" placeholder="Password Confirm"> <br>
+        </form>
+    </div>
+    <div class="newsletter">
+        <label>Subcribe</label> 
+        <input type="radio" id="yes"  value="Yes ">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no"  value="No">
+        <label for="no">No</label>
+
+    </div>
+    <div class="continue">
+        I have read and agree to the
+        <a href="#">Privacy Policy</a>
+        <input type="checkbox" id="agree" value="1">
+        <input type="submit" value="continue">
+    </div>
+    
+</div>
+
+</body>
+<script src="main.js"></script>
+</html>
