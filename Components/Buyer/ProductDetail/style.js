@@ -68,6 +68,7 @@ export const style = `
 .booking__adjust input {
   height: 40px;
   width: 40px;
+  padding: 10px;
 }
 .booking__adjust .reduce__qty,
 .booking__adjust .add__qty {
@@ -82,6 +83,8 @@ export const style = `
   color: #222222;
 }
 .booking__adjust input {
+  width: 40px;
+  height: 40px;
   font-size: 16px;
   font-weight: bold;
   padding: 0 8px;
@@ -131,5 +134,4 @@ input::-webkit-inner-spin-button {
   margin-bottom: 20px;
   border-bottom: 1px solid #777777;
 }
-
 `

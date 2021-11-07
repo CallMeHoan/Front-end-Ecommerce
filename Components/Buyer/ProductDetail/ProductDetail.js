@@ -6,15 +6,15 @@ template.innerHTML = `
     </style>
     <div class="product__detail">
         <div class="product__name">
-            <h2>Product name here</h2>
+            <h2></h2>
         </div>
         <div class="product__detail__container">
             <div class="product__detail__image">
-                <img src="https://opencart.mahardhi.com/MT04/noriva/01/image/cache/catalog/products/14-1000x1000.jpg">
+                <img>
             </div>
             <div class="product__detail__booking">
                 <div class="booking__top">
-                    <h1>Product name here</h1>
+                    <h1></h1>
                     <div class="product__rating">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                             <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -36,15 +36,15 @@ template.innerHTML = `
                 </div>
                 <div class="booking__product__detail">
                     <br>
-                    <p>Brand: Luon vuituoi</p>
-                    <p>Product code: Luon vuituoi 69</p>
-                    <p>Availability: In stock</p>
+                    <p>Brand: <span id='brand'></span></p>
+                    <p>Product Model: <span id='model'></p>
+                    <p>Availability: <span id='stock'></p>
                     <br>
                 </div>
                 <div class="booking__price">
                     <br>
                     <p>Price:</p>
-                    <h2>$482.00</h2>
+                    <h2><span id='price'></span></h2>
                     <br>
                 </div>
                 <div class="booking">
@@ -52,21 +52,11 @@ template.innerHTML = `
                     <label>Quantity</label>
                     <div class="booking__adjust">
                         <div class="quantity__adjust">
-                            <button class="reduce__qty">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
-                                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
-                                    </svg>
-                                </span>
-                            </button>
-                            <input type="number" value="1">
-                            <button class="add__qty">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
-                                        <path d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
-                                    </svg>
-                                </span>
-                            </button>
+                            <div class='quantity__container'>
+                                <button class='reduce__qty' id='reduce'><span>-</span></button>
+                                <input value='1' class='qty__value' id='qty__value'></input>
+                                <button class='add__qty' id='add'><span >+</span></button>
+                            </div>
                         </div>
                         <div class="add__to__cart">
                             <button class="add__cart__btn">ADD TO CART</button>
@@ -87,25 +77,7 @@ template.innerHTML = `
             <br>
             <p>
                 <br>
-                Intel Core 2 Duo processor<br>
-
-                Powered by an Intel Core 2 Duo processor at speeds up to 2.16GHz, the new MacBook is the fastest
-                ever.<br>
-
-                1GB memory, larger hard drives<br>
-
-                The new MacBook now comes with 1GB of memory standard and larger hard drives for the entire line perfect
-                for running more of your favorite applications and storing growing media collections.<br>
-
-                Sleek, 1.08-inch-thin design<br>
-
-                MacBook makes it easy to hit the road thanks to its tough polycarbonate case, built-in wireless
-                technologies, and innovative MagSafe Power Adapter that releases automatically if someone accidentally
-                trips on the cord.<br>
-
-                Built-in iSight camera<br>
-                Right out of the box, you can have a video chat with friends or family,2 record a video at your desk, or
-                take fun pictures with Photo Booth<br>
+                <span id='description'></span>
                 <br>
             </p>
         </div>
@@ -118,6 +90,30 @@ class ProductDetail extends HTMLElement {
         
         this.attachShadow({ mode: 'open'});
         this.shadowRoot.appendChild(template.content.cloneNode(true));
+        this.shadowRoot.querySelector('h2').innerText = this.getAttribute('productName');
+        this.shadowRoot.querySelector('h1').innerText = this.getAttribute('productName');
+        this.shadowRoot.querySelector('#price').innerText = this.getAttribute('productPrice');
+        this.shadowRoot.querySelector('#brand').innerText = this.getAttribute('brand');
+        this.shadowRoot.querySelector('#model').innerText = this.getAttribute('model');
+        this.shadowRoot.querySelector('#stock').innerText = this.getAttribute('stock');
+        this.shadowRoot.querySelector('#description').innerText = this.getAttribute('description');
+        this.shadowRoot.querySelector('img').src = this.getAttribute('productImage');
+    }
+    reduceQty() {
+        // var value = this.shadowRoot.getElementById('qty__value').value;
+        // value -= 1;
+        // document.getElementById('qty__value').value = value;
+        console.log('123');
+    }
+    addQty() {
+        // var value = this.shadowRoot.getElementById('qty__value').value;
+        // value -= 1;
+        // document.getElementById('qty__value').value = value;
+        console.log('123');
+    }
+    connectedCallBack() {
+        this.shadowRoot.querySelector('#reduce').addEventListener('click', () => this.reduceQty());
+        this.shadowRoot.querySelector('#add').addEventListener('click', () => this.addQty());
     }
 }
 

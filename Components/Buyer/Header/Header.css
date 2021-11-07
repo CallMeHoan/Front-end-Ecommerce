@@ -1,107 +1,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost&family=Poppins:wght@600&display=swap");
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-body {
+html {
   font-family: Jost;
 }
-.down__section {
-  height: 110px;
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid rgba(0, 0, 0, 0.15);
+  border-width: 1px 0;
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+    inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
 }
-.header__container {
-  position: fixed;
-  z-index: 1000;
-  width: 100vw;
-  height: 110px;
-  padding: 30px 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: whitesmoke;
+
+.form-control-dark {
+  color: #fff;
+  background-color: var(--bs-dark);
+  border-color: var(--bs-gray);
 }
-.header__middle ul {
-  list-style: none;
-  display: flex;
-  color: #222222;
-  margin-top: 20px;
+.form-control-dark:focus {
+  color: #fff;
+  background-color: var(--bs-dark);
+  border-color: #fff;
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
 }
-.header__middle ul li {
-  padding: 15px 17px;
-  position: relative;
+
+.bi {
+  vertical-align: -0.125em;
+  fill: currentColor;
 }
-.header__middle ul li::after {
-  content: "";
-  position: absolute;
-  height: 0.1rem;
-  background-color: #222222;
-  left: 15px;
-  bottom: 15px;
-  transform: scale(0, 1);
-  transition: transform 0.3s ease;
+
+.text-small {
+  font-size: 85%;
 }
-.header__middle ul li:nth-child(1)::after {
-  width: 60%;
+
+.dropdown-toggle {
+  outline: 0;
 }
-.header__middle ul li:nth-child(2)::after {
-  width: 76%;
-}
-.header__middle ul li:nth-child(3)::after {
-  width: 81%;
-}
-.header__middle ul li:nth-child(4)::after {
-  width: 75%;
-}
-.header__middle ul li:nth-child(5)::after {
-  width: 70%;
-}
-.header__middle ul li:hover::after {
-  transform: scale(1, 1);
-}
-.header__middle ul li a {
-  color: #222222;
-  text-transform: uppercase;
-  cursor: pointer;
-  font-size: 14px;
-  text-decoration: none;
-}
-.header__middle .dropdown__items {
-  display: none;
-}
-.header__middle ul li:hover .dropdown__items {
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  width: 150px;
-  box-shadow: rgb(0 0 0 / 11%);
-  background-color: whitesmoke;
-  text-align: center;
-  border: 1px;
-  border-radius: 2px;
-  transform: none;
-  box-shadow: -2px 8px 55px 12px rgba(175, 175, 175, 0.37);
-  -webkit-box-shadow: -2px 8px 55px 12px rgba(175, 175, 175, 0.37);
-  -moz-box-shadow: -2px 8px 55px 12px rgba(175, 175, 175, 0.37);
-}
-.header__middle .dropdown__items ul {
-  display: block;
-}
-.header__middle .dropdown__items ul li a {
-  padding: 15px 0px;
-  text-align: center;
-  margin-left: -30px;
-}
-.header__middle .dropdown__items ul li a {
-  color: #777777;
-}
-.header__middle .dropdown__items ul li::after {
-  display: none;
-}
-.header__middle .dropdown__items ul li a:hover {
-  color: #222222;
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+  .navbar .nav-item:hover .nav-link {
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+  }
 }
 .header__right ul {
   list-style: none;
@@ -149,4 +94,42 @@ body {
 }
 .header__right .offcanvas .offcanvas-body .input-group .form__select {
   width: 200px;
+}
+.dropdown__items {
+  display: none;
+}
+ul li:hover .dropdown__items {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 150px;
+  box-shadow: rgb(0 0 0 / 11%);
+  background-color: whitesmoke;
+  text-align: center;
+  border: 1px;
+  border-radius: 2px;
+  transform: none;
+  box-shadow: -2px 8px 55px 12px rgba(175, 175, 175, 0.37);
+  -webkit-box-shadow: -2px 8px 55px 12px rgba(175, 175, 175, 0.37);
+  -moz-box-shadow: -2px 8px 55px 12px rgba(175, 175, 175, 0.37);
+}
+.dropdown__items ul li {
+  list-style: none;
+  margin-left: -35px;
+}
+.dropdown__items ul li a {
+  color: #777777 !important;
+  padding: 20px;
+}
+.dropdown__items ul li a:hover {
+  color: #222222 !important;
+  background-color: #777777;
+}
+.nav-link {
+  color: #222222 !important;
+}
+
+.down__section {
+  margin-bottom: -15px;
 }
