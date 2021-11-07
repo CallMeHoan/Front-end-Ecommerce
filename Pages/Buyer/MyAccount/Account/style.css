@@ -4,3 +4,14 @@
   margin: 0;
   box-sizing: border-box;
 }
+h1 {
+  font-size: 20px;
+}
+a {
+  outline: none;
+  text-decoration: none;
+  color: #777777;
+}
+a:hover {
+  color: #222222;
+}
