@@ -4,8 +4,18 @@
   box-sizing: border-box;
 }
 .wrapper {
-  /* margin-left: 10px; */
-  padding: 50px 50px;
+  margin-left: 10px;
+  padding: 30px 100px;
   align-items: center;
   justify-content: center;
+}
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    padding: 0 130px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .wrapper {
+    padding: 0;
+  }
 }

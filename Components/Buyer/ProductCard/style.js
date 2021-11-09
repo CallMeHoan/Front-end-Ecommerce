@@ -160,7 +160,7 @@ export const style = `
 }
 
 /* For screen with max width 1100px */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1024px) {
   .product_card {
     width: 230px;
   }

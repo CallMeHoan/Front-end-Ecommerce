@@ -24,8 +24,8 @@ export const style = `
 }
 .product__detail__image img,
 .product__detail__booking {
-  width: 560px;
-  height: 560px;
+  width: 37vw;
+  height: auto;
 }
 .product__detail__image {
   margin-right: 20px;

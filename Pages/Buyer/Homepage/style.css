@@ -16,14 +16,14 @@ html {
 
 .slider {
   width: 100vw;
-  height: 800px;
+  height: auto;
   border-radius: 0px;
   overflow: hidden;
 }
 
 .slides {
   width: 500%;
-  height: 800px;
+  height: auto;
   display: flex;
 }
 
@@ -38,7 +38,7 @@ html {
 
 .slide img {
   width: 100%;
-  height: 800px;
+  height: auto;
 }
 
 .navigation-manual {
@@ -119,8 +119,8 @@ html {
   display: flex;
 }
 .image__card__item img {
-  height: 550px;
-  width: 765px;
+  height: auto;
+  width: 50vw;
 }
 .image__btn__group {
   z-index: 1;
@@ -208,4 +208,13 @@ html {
 .sportware .shopping__button:hover {
   background-color: #ffffff;
   color: #222222;
+}
+@media only screen and (max-width: 1024px) {
+  .owl {
+    margin-top: -150px;
+    margin-bottom: 30px;
+  }
+  .owl h2 {
+    margin-bottom: 20px;
+  }
 }

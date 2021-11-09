@@ -1,6 +1,6 @@
 // owl carousel product
 $(".carousel").owlCarousel({
-    margin: 20,
+    margin: 2,
     loop: true,
     autoplay: true,
     autoplayTimeout: 2000,
@@ -15,7 +15,7 @@ $(".carousel").owlCarousel({
             items: 2,
         },
         800: {
-            items: 3,
+            items: 2,
         },
         1000:{
             items: 3,

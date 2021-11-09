@@ -18,6 +18,9 @@ $(document).ready(function() {
             <li>
                 <a class="account__links" href="../../MyAccount/OrderHistory/index.html">Order History</a>
             </li>
+            <li>
+                <a class="account__links" href="../../MyAccount/CreateSeller/index.html">Become Our Seller</a>
+            </li>
         </ul>
     </div>
     <div class="p-5" style="margin-top: -100px;">
