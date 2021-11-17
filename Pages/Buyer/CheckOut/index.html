@@ -25,42 +25,6 @@
   <div class="accordion" id="accordionItems">
     <h3>CHECKOUT</h3>
     <div class="accordion-item">
-      <h2 class="accordion-header" id="headingOne">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-          aria-expanded="true" aria-controls="collapseOne">
-          CHECKOUT OPTION
-        </button>
-      </h2>
-      <div id="collapseOne" collapseOneclass="accordion-collapse collapse show" aria-labelledby="headingOne"
-        data-bs-parent="#accordionItems">
-        <div class="accordion-body container">
-          <div class="option__container row">
-            <div class="option__1 col">
-              <h1>New Customer</h1>
-              <p>Please sign up to continue shopping!</p>
-              <br>
-              <a class="register__btn" href="../MyAccount/Register/index.html">Register</a>
-            </div>
-            <div class="option__2 col">
-              <h1>Returning Customer</h1>
-              <p>I am a returning customer</p>
-              <div class="mb-3">
-                <label class="form-label"><span>*</span>Username</label>
-                <input type="text" class="form-control" placeholder="Enter your Username here!" required>
-              </div>
-              <div class="mb-3">
-                <label class="form-label"><span>*</span>Password</label>
-                <input type="password" class="form-control" placeholder="Enter your password here!" required>
-              </div>
-              <div class="mb-3">
-                <a type="button" class="login__btn">Login</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item">
       <h2 class="accordion-header" id="headingTwo">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
           aria-expanded="false" aria-controls="collapseTwo">
@@ -86,45 +50,12 @@
                   <label class="form-label"><span>*</span>Telephone</label>
                   <input type="number" class="form-control" placeholder="Enter your Telephone here!" required>
                 </div>
-                <legend>Your Account Details</legend>
-                <div class="mb-3">
-                  <label class="form-label"><span>*</span>Username</label>
-                  <input type="text" class="form-control" placeholder="Enter your Username here!" required>
-                </div>
-                <div class="mb-3">
-                  <label class="form-label"><span>*</span>Password</label>
-                  <input type="password" class="form-control" placeholder="Enter your password here!" required>
-                </div>
-                <div class="mb-3">
-                  <label class="form-label"><span>*</span>Password Confirm</label>
-                  <input type="password" class="form-control" placeholder="Confirm your Pasword here!" required>
-                </div>
               </div>
               <div class="option__2 col">
                 <legend>Your Address</legend>
                 <div class="mb-3">
                   <label class="form-label"><span>*</span>Address</label>
-                  <input type="text" class="form-control" placeholder="Enter your Address here!" required>
-                </div>
-                <div class="mb-3">
-                  <label class="form-label"><span>*</span>Road</label>
-                  <input type="text" class="form-control" placeholder="Enter your Road Name here!" required>
-                </div>
-                <div class="mb-3">
-                  <label class="form-label"><span>*</span>Ward</label>
-                  <input type="text" class="form-control" placeholder="Enter your Ward here!" required>
-                </div>
-                <div class="mb-3">
-                  <label class="form-label"><span>*</span>District</label>
-                  <input type="text" class="form-control" placeholder="Enter your District here!" required>
-                </div>
-                <div class="mb-3">
-                  <label class="form-label"><span>*</span>City</label>
-                  <input type="text" class="form-control" placeholder="Enter your City here!" required>
-                </div>
-                <div class="mb-3">
-                  <label class="form-label"><span>*</span>Country</label>
-                  <input type="text" class="form-control" placeholder="Enter your Country here!" required>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
                 </div>
                 <div class="mb-3">
                   <a style="float: right; margin-top: 15px;" type="button" class="login__btn">CONTINUE</a>
@@ -184,7 +115,8 @@
             <thead class="thead-dark">
               <tr>
                 <th scope="col">Product Name</th>
-                <th scope="col">Model</th>
+                <th scope="col">Brand</th>
+                <th scope="col">Category</th>
                 <th scope="col">Quantity</th>
                 <th scope="col">Unit Price</th>
                 <th scope="col">Total Price</th>
@@ -204,6 +136,11 @@
                 </td>
                 <td>
                   <div class="shopping__cart__component">
+                    <p>Men's Shoe</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="shopping__cart__component">
                     <p>1</p>
                   </div>
                 </td>
@@ -219,31 +156,7 @@
                 </td>
               </tr>
               <tr>
-                <td colspan="4">
-                  <div class="shopping__cart__component">
-                    <p style="float: right;">Shipping fee</p>
-                  </div>
-                </td>
-                <td>
-                  <div class="shopping__cart__component">
-                    <p>Bao nhiêu tiền đấy</p>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="4">
-                  <div class="shopping__cart__component">
-                    <p style="float: right;">Sub-Total</p>
-                  </div>
-                </td>
-                <td>
-                  <div class="shopping__cart__component">
-                    <p>Bao nhiêu tiền đấy</p>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="4">
+                <td colspan="5">
                   <div class="shopping__cart__component">
                     <p style="float: right;">Total</p>
                   </div>

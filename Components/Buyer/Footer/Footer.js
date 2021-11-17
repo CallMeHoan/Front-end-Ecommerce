@@ -15,10 +15,10 @@ $(document).ready(function() {
                     <div class="col__item">
                         <h5>INFORMATION</h5>
                         <div class="row">
-                            <a href="#">About Us</a>
-                            <a href="#">Privacy Policy</a>
-                            <a href="#">Tearms & Conditions</a>
-                            <a href="#">Contact Us</a>
+                            <a href="../../../../../Front-end-Ecommerce/Pages/Buyer/Information/AboutUs/index.html">About Us</a>
+                            <a href="../../../../../Front-end-Ecommerce/Pages/Buyer/Information/PrivacyPolicy/index.html">Privacy Policy</a>
+                            <a href="../../../../../Front-end-Ecommerce/Pages/Buyer/Information/TearmAndConditions/index.html">Tearms & Conditions</a>
+                            <a href="../../../../../Front-end-Ecommerce/Pages/Buyer/Information/ContactUs/index.html">Contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -26,10 +26,9 @@ $(document).ready(function() {
                     <div class="col__item">
                         <h5>MY ACCOUNT</h5>
                         <div class="row">
-                            <a href="#">My Account</a>
-                            <a href="#">Wish List</a>
-                            <a href="#">Newselleter</a>
-                            <a href="#">Order history</a>
+                            <a href="../../../../../Front-end-Ecommerce/Pages/Buyer/MyAccount/Account/index.html">My Account</a>
+                            <a href="../../../../../Front-end-Ecommerce/Pages/Buyer/MyAccount/WishList/index.html">Wish List</a>
+                            <a href="../../../../../Front-end-Ecommerce/Pages/Buyer/MyAccount/OrderHistory/index.html">Order history</a>
                         </div>
                     </div>
                 </div>

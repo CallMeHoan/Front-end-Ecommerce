@@ -13,9 +13,6 @@ $(document).ready(function() {
                 <a class="account__links" href="../../MyAccount/Account/index.html">My Account</a>
             </li>
             <li>
-                <a class="account__links" href="../../MyAccount/WishList/index.html">Wishlist</a>
-            </li>
-            <li>
                 <a class="account__links" href="../../MyAccount/OrderHistory/index.html">Order History</a>
             </li>
             <li>

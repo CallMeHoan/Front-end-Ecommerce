@@ -4,7 +4,7 @@ $(document).ready(function() {
     <div class="container">
       <header
         class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
-        <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <a href="../../../../../Front-end-Ecommerce/Pages/Buyer/Homepage/index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
           <img src="https://opencart.mahardhi.com/MT04/noriva/01/image/catalog/logo.png" alt="Logo">
         </a>
 
@@ -86,8 +86,8 @@ $(document).ready(function() {
               </nav>
             </div>
           </div>
-          <a href="#" class="btn"><i class="far fa-user"></i></a>
-          <a href="#" class="btn"><i class="fas fa-shopping-bag"></i></a>
+          <a href="../../../../../Front-end-Ecommerce/Pages/Buyer/MyAccount/Login/index.html" class="btn"><i class="far fa-user"></i></a>
+          <a href="../../../../../Front-end-Ecommerce/Pages/Buyer/ShoppingCart/index.html" class="btn"><i class="fas fa-shopping-bag"></i></a>
         </div>
     </div>
     </header>
