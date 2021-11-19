@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  font-family: Jost;
+}
+.thanks {
+  height: 300px;
+}
+.thanks .thanks__paragraph {
+  text-align: center;
+}
+.thanks .thanks__paragraph h1 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+}
+.thanks .thanks__paragraph span a {
+  text-decoration: none;
+  color: #d1cbcb;
+}
+.thanks .thanks__paragraph span a:hover {
+  color: #222222;
+}
