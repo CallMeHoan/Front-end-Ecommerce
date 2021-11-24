@@ -34,6 +34,9 @@ $(document).ready(function() {
             <li>
                 <a class="account__links" href="../../Information/ContactUs/index.html">Contact Us</a>
             </li>
+            <li>
+                <a class="account__links" href="../../Information/SiteMap/index.html">Site Map</a>
+            </li>
         </ul>
     </div>
 </nav>

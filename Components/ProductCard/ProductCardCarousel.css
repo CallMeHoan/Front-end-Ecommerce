@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 .wrapper {
+  height: auto;
   margin-left: 10px;
   padding: 30px 100px;
   align-items: center;

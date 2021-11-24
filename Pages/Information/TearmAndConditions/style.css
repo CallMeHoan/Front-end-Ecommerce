@@ -13,15 +13,14 @@ body {
   text-transform: uppercase;
 }
 .about__us__paragraph {
-  height: 450px;
+  height: auto;
   width: auto;
   background-color: #f7f7f7;
-  padding: 20px 5px;
   display: flex;
   justify-content: center;
 }
 .about__us__paragraph .about__us__paragraph__text {
-  width: 50%;
+  padding: 60px 60px;
 }
 .about__us__paragraph .about__us__paragraph__img {
   width: 50%;

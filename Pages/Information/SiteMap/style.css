@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+.about__us__container h1 {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.about__us__paragraph {
+  height: auto;
+  width: auto;
+  background-color: #f7f7f7;
+  display: flex;
+  padding: 60px 60px;
+}
+.about__us__paragraph ul li {
+  padding: 5px 20px;
+  font-size: 15px;
+}
+.about__us__paragraph ul li a {
+  color: #777777;
+  font-size: 17px;
+  font-family: Jost;
+}
+.about__us__paragraph ul li a:hover {
+  color: #222222;
+}

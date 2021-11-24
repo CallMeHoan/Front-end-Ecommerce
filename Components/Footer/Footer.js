@@ -19,6 +19,7 @@ $(document).ready(function() {
                             <a href="../../../../Front-end-Ecommerce/Pages/Information/PrivacyPolicy/index.html">Privacy Policy</a>
                             <a href="../../../../Front-end-Ecommerce/Pages/Information/TearmAndConditions/index.html">Tearms & Conditions</a>
                             <a href="../../../../Front-end-Ecommerce/Pages/Information/ContactUs/index.html">Contact Us</a>
+                            <a href="../../../../Front-end-Ecommerce/Pages/Information/SiteMap/index.html">Site Map</a>
                         </div>
                     </div>
                 </div>
